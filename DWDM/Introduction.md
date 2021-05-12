@@ -1,0 +1,39 @@
+# Introduction to Data Warehousing
+- A Datawarehouse is the repository of a data and it is used for Management decision support system. Datawarehouse consists of wide variety of data that has high level of business conditions at a single point in time.
+- In single sentence, it is repository of integrated information which can be available for queries and analysis.
+
+## Data Warehousing Components
+- ![image](https://user-images.githubusercontent.com/44335648/117975809-b32eb080-b34c-11eb-9096-0682801097a7.png)
+
+## What is a dimensional table?
+- Dimensional tables include textual attributes of measurement saved in the fact tables. A dimensional table is a group of hierarchies, categories, and logic which can be used for the customer to traverse in hierarchy nodes.
+
+## DBMS Schemas for Decision Support
+- Star Schema
+  -  It has
+    - one large central table(facttable)
+    - set of smaller tables(dimensions)
+    - arranged in a radial pattern around the central table
+- Snowflake schema
+  - decomposing one or more of the dimensions.
+  - The decomposed snow flake structure visualizes the hierarchical structure of dimensions very well.
+- Fact constellation schema
+  - splitting the original star schema into more star schemes. each of them describes facts on another level of dimension hierarchies
+
+## Data extraction, cleanup & Transformation tools
+- ![image](https://user-images.githubusercontent.com/44335648/117977846-dc504080-b34e-11eb-9fc5-0221a13501c6.png)
+
+### EXTRACT
+- Process of extract the relevant data from the operational database before bringing into the data warehouse.
+
+### Transformation
+- Smoothing: remove noise from data
+- Aggregation: summarization, data cube construction
+- Generalization: concept hierarchy climbing 
+- Normalization: scaled to fall within a small, specified range – min-max normalization – z-score normalization – normalization by decimal scaling 
+
+### Cleaning
+#### Data cleaning tasks 
+- Fill in missing values
+- Identify outliers and smooth out noisy data
+- Correct inconsistent data 
