@@ -1,0 +1,28 @@
+# Introduction
+A data warehouse is a repository that includes past and commutative information from one or multiple sources. This repository can be used by the
+employees of the organization for analysis, drawing insights, and future forecasting.
+- The fundamental concept of a data warehouse is the extract, transform and
+load (ETL) process:
+  - **Extract**: Gathering data from various heterogeneous sources
+  - **Transform**: Converting sub-standard data into clean, structured, and verified data that is ready to use
+  - **Load**: Loading the data into a new destination
+
+## Single-tier data warehouse architecture
+- The structure of a single-tier data warehouse architecture centers on producing a dense set of data and reducing the volume of data deposited. 
+- Although it is beneficial for eliminating redundancies, this architecture is not suitable for businesses with complex data requirements and numerous data streams. 
+- This is where the 2-tier and 3-tier data warehouse architecture come in as they both deal with more complex data streams.
+
+## Two-tier data warehouse architecture
+- In comparison, the data structure of a two-tier architecture splits the tangible data sources from the warehouse itself. 
+- Unlike a single-tier, the two-tier structure uses a system and a database server. 
+- This is most commonly used in small organizations where a server is used as a data mart. 
+- Although it is more efficient at data storage and organization, the two-tier architecture is not scalable. 
+- Moreover, it only supports a nominal number of users.
+
+## Three-tier data warehouse architecture
+- The three-tier data warehouse architecture is the most common type of modern DWH architecture as it produces a well-organized data flow from raw information to valuable insights.
+- The bottom tier typically comprises the databank server that creates an abstraction layer on data from numerous sources, like transactional databanks utilized for front-end uses.
+- The middle tier includes an Online Analytical Processing (OLAP) server. 
+  - From a user’s perspective, this level alters the data into an arrangement that is more suitable for analysis and multifaceted probing. 
+  - Since it includes an OLAP server pre-built in the architecture, we can also call it the OLAP-focused data warehouse.
+- The third and the topmost tier is the client level which includes the tools and Application Programming Interface (API) used for high-level data analysis, inquiring, and reporting.
